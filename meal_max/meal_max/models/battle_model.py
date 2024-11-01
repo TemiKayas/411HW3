@@ -84,10 +84,15 @@ class BattleModel:
         self.combatants.clear()
 
     def get_battle_score(self, combatant: Meal) -> float:
-        """Calculates the battle score for a given combatant.
+        """
+        Calculates the battle score for a combatant.
+        
+        Calculates the battle score for a combatant based on the following rules:
+            - Multiply the price by the number of letters in the cuisine.
+            - Subtract a difficulty modifier (HIGH = 1, MED = 2, LOW = 3).
 
         Args:
-            combatant (Meal): The combatant whose battle score is being calculated.
+            combatant (Meal): A meal dataclass representing the combantant.
 
         Returns:
             float: The calculated battle score.
