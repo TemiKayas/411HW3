@@ -18,7 +18,7 @@ class BattleModel:
         self.combatants: List[Meal] = []
 
     def battle(self) -> str:
-        """Executes a battle between two combatants and determines the winner.
+        """Executes a battle between two combatants and determines the winner
 
         Raises:
             ValueError: If there are fewer than two combatants prepared for battle.
